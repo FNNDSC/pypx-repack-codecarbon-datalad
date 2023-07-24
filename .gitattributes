@@ -2,3 +2,4 @@
 **/.git* annex.largefiles=nothing
 *.py annex.largefiles=nothing
 *.yaml annex.largefiles=nothing
+*.md annex.largefiles=nothing
