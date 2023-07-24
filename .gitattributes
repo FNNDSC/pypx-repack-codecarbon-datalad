@@ -3,3 +3,4 @@
 *.py annex.largefiles=nothing
 *.yaml annex.largefiles=nothing
 *.md annex.largefiles=nothing
+*.csv annex.largefiles=nothing
