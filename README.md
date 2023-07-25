@@ -8,10 +8,13 @@ This is a [Datalad](https://www.datalad.org/) repository.
 ## Background
 
 [pypx](https://github.com/FNNDSC/pypx) is a suite of Python tools which provide a Python and command-line
-API to a PACS server for DICOM query and retrieval. `px-repack`, is a tool from `pypx` which is called by
-[`storescp`](https://support.dcmtk.org/docs/storescp.html) on each DICOM instance received from the PACS.
-The job of `px-repack` is to copy incoming DICOM files to another path named by DICOM tag data.
-Recently, we re-implemented `px-repack` in [Rust](https://www.rust-lang.org/) for better performance.
+API to a PACS server for DICOM query and retrieval. `pypx` is a component of the
+[_ChRIS_ Project](https://chrisproject.org).
+
+`px-repack`, is a tool from `pypx` which is called by [`storescp`](https://support.dcmtk.org/docs/storescp.html)
+on each DICOM instance received from the PACS. The job of `px-repack` is to copy incoming DICOM files to another
+path named by DICOM tag data. Recently, we re-implemented `px-repack` in [Rust](https://www.rust-lang.org/)
+based on [dicom-rs](https://github.com/Enet4/dicom-rs) for better performance.
 This reimplementation is known as `rx-repack` and is housed under a new project called
 [`pypx-listener`](https://github.com/FNNDSC/pypx-listener).
 
